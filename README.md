@@ -19,7 +19,7 @@
 
 ## English
 
-Ocarina Mod Launcher installs, enables and sorts out mods for *Ocarina of Time* (Switch 2 version) on the Fritchii, Lichii and Eden emulators. No more copying folders by hand, ticking mods in the emulator, or guessing which mod overrides another: one switch per mod, and the launcher handles the rest.
+Ocarina Mod Launcher installs, enables and sorts out mods for *Ocarina of Time* (Switch 2 version) on Switch emulators: Fritchii, Lichii, Eden, Citron, Sudachi, suyu, yuzu, Torzu, and Ryujinx and its forks. No more copying folders by hand, ticking mods in the emulator, or guessing which mod overrides another: one switch per mod, and the launcher handles the rest.
 
 > **Important.** The launcher does **not provide the game, ROMs, keys or an emulator**. You must own the game and the emulator yourself. It ships no game files and uses no Nintendo artwork: the pictures in the catalog are the ones mod authors publish on GameBanana.
 
@@ -52,9 +52,11 @@ Ocarina Mod Launcher installs, enables and sorts out mods for *Ocarina of Time* 
 1. Download `OcarinaModLauncher_0.1.0_x64-setup.exe` from the [releases page](https://github.com/ArthropodeLabs/ocarina-mod-launcher/releases/latest).
 2. Run it. **Windows SmartScreen will probably show "Windows protected your PC"**: this is expected, the program is not yet signed with a paid certificate. Click **More info**, then **Run anyway**.
 3. Follow the installer (no administrator rights needed).
-4. On first launch, open **Settings**: the launcher looks for the emulator by itself. Otherwise, point it to the folder that contains `fritchii.exe` (or `lichii.exe`, `eden.exe`).
+4. On first launch, open **Settings**: the launcher looks for the emulator by itself. Otherwise, point it to the folder that contains the emulator's exe (`fritchii.exe`, `eden.exe`, `yuzu.exe`, `Ryujinx.exe`…).
 
-**Requirements**: Windows 10 or 11 (64-bit), a Fritchii, Lichii or Eden emulator with the game, and an Internet connection for the catalog.
+**Requirements**: Windows 10 or 11 (64-bit), the Switch 2 version of the game (1.1.1) on a supported emulator, and an Internet connection for the catalog.
+
+**Supported emulators**: Fritchii, Lichii, Eden, Citron, Sudachi, suyu, yuzu and Torzu (mods in `load\`), and Ryujinx and its forks (mods in `mods\contents\`). Only Fritchii has been tried with the real game so far: if something goes wrong with another one, use "Copy a bug report" in Settings. The recompiled PC version of the game is not supported (its mods work differently).
 
 ### FAQ
 
@@ -103,7 +105,7 @@ The launcher is and will stay free. If you like it, you can buy me a coffee on *
 
 ## Français
 
-Ocarina Mod Launcher installe, active et départage les mods d'*Ocarina of Time* (version Switch 2) pour les émulateurs Fritchii, Lichii et Eden. Plus besoin de copier des dossiers à la main, de cocher les mods dans l'émulateur ou de deviner quel mod en écrase un autre : un interrupteur par mod, et le launcher s'occupe du reste.
+Ocarina Mod Launcher installe, active et départage les mods d'*Ocarina of Time* (version Switch 2) sur émulateur Switch : Fritchii, Lichii, Eden, Citron, Sudachi, suyu, yuzu, Torzu, ainsi que Ryujinx et ses dérivés. Plus besoin de copier des dossiers à la main, de cocher les mods dans l'émulateur ou de deviner quel mod en écrase un autre : un interrupteur par mod, et le launcher s'occupe du reste.
 
 > **Important.** Le launcher ne fournit **ni le jeu, ni ROM, ni clés, ni émulateur**. Vous devez posséder le jeu et l'émulateur vous-même. Il n'embarque aucun fichier du jeu et n'utilise aucun visuel de Nintendo : les images que vous voyez dans le catalogue sont celles publiées par les auteurs de mods sur GameBanana.
 
@@ -136,9 +138,11 @@ Ocarina Mod Launcher installe, active et départage les mods d'*Ocarina of Time*
 1. Téléchargez `OcarinaModLauncher_0.1.0_x64-setup.exe` depuis la [page des versions](https://github.com/ArthropodeLabs/ocarina-mod-launcher/releases/latest).
 2. Lancez-le. **Windows SmartScreen va probablement afficher « Windows a protégé votre ordinateur »** : c'est normal, le programme n'est pas encore signé avec un certificat payant. Cliquez sur **Informations complémentaires**, puis sur **Exécuter quand même**.
 3. Suivez l'installeur (pas besoin de droits administrateur).
-4. Au premier lancement, ouvrez **Réglages** : le launcher cherche l'émulateur tout seul. Sinon, indiquez le dossier qui contient `fritchii.exe` (ou `lichii.exe`, `eden.exe`).
+4. Au premier lancement, ouvrez **Réglages** : le launcher cherche l'émulateur tout seul. Sinon, indiquez le dossier qui contient l'exe de l'émulateur (`fritchii.exe`, `eden.exe`, `yuzu.exe`, `Ryujinx.exe`…).
 
-**Configuration requise** : Windows 10 ou 11 (64 bits), un émulateur Fritchii, Lichii ou Eden avec le jeu, et une connexion Internet pour le catalogue.
+**Configuration requise** : Windows 10 ou 11 (64 bits), la version Switch 2 du jeu (1.1.1) sur un émulateur pris en charge, et une connexion Internet pour le catalogue.
+
+**Émulateurs pris en charge** : Fritchii, Lichii, Eden, Citron, Sudachi, suyu, yuzu et Torzu (mods dans `load\`), ainsi que Ryujinx et ses dérivés (mods dans `mods\contents\`). Seul Fritchii a été essayé avec le vrai jeu pour l'instant : en cas de souci avec un autre, utilisez « Copier un rapport de bug » dans les Réglages. La version PC recompilée du jeu n'est pas prise en charge (ses mods fonctionnent autrement).
 
 ### FAQ
 
