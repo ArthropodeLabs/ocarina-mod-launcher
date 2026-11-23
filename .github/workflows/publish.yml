@@ -1,0 +1,51 @@
+# Publishes a release as "github-actions" from a draft named "staging-v<version>".
+# The draft (installer, .sig, latest.json, portable zip and release notes) is prepared by the maintainers' release script.
+name: Publish release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version without the v (e.g. 0.1.2)"
+        required: true
+      latest:
+        description: "Mark as the latest release (the auto-update reads it)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      VERSION: ${{ inputs.version }}
+    steps:
+      - name: Find the staging draft
+        run: |
+          gh api "repos/$GH_REPO/releases?per_page=100" \
+            --jq ".[] | select(.draft and .tag_name == \"staging-v$VERSION\")" > draft.json
+          test -s draft.json || { echo "No draft staging-v$VERSION"; exit 1; }
+          jq -r .name draft.json > title.txt
+          jq -r .body draft.json > notes.md
+          mkdir assets
+          jq -r '.assets[] | "\(.id) \(.name)"' draft.json | while read -r id name; do
+            gh api -H "Accept: application/octet-stream" "repos/$GH_REPO/releases/assets/$id" > "assets/$name"
+          done
+          ls -l assets
+
+      - name: Replace any existing release v${{ inputs.version }}
+        run: |
+          gh release delete "v$VERSION" --yes --cleanup-tag || true
+          gh api -X DELETE "repos/$GH_REPO/git/refs/tags/v$VERSION" || true
+
+      - name: Publish
+        run: |
+          latest="--latest=false"
+          if [ "${{ inputs.latest }}" = "true" ]; then latest="--latest"; fi
+          gh release create "v$VERSION" assets/* --target "${{ github.sha }}" \
+            --title "$(cat title.txt)" --notes-file notes.md $latest
+          gh api -X DELETE "repos/$GH_REPO/releases/$(jq -r .id draft.json)"
