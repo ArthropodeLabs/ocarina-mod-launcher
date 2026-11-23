@@ -23,7 +23,7 @@ Ocarina Mod Launcher installs, enables and sorts out mods for *Ocarina of Time* 
 
 > **Important.** The launcher does **not provide the game, ROMs, keys or an emulator**. You must own the game and the emulator yourself. It ships no game files and uses no Nintendo artwork: the pictures in the catalog are the ones mod authors publish on GameBanana.
 
-![Catalog](captures/en-01-catalogue.png)
+![Catalog](screenshots/en-01-catalogue.png)
 
 ### Features
 
@@ -41,11 +41,11 @@ Ocarina Mod Launcher installs, enables and sorts out mods for *Ocarina of Time* 
 - **French and English** interface, retro "16-bit Adventure" theme.
 - **Play** button.
 
-![Mod page](captures/en-02-fiche-mod.png)
+![Mod page](screenshots/en-02-fiche-mod.png)
 
 | My mods | Backups |
 |---|---|
-| ![My mods](captures/en-03-mes-mods.png) | ![Backups](captures/en-04-sauvegardes.png) |
+| ![My mods](screenshots/en-03-mes-mods.png) | ![Backups](screenshots/en-04-sauvegardes.png) |
 
 ### Installation
 
@@ -94,6 +94,7 @@ Unofficial fan project, not affiliated with Nintendo or the emulator authors. *T
 
 - Mods belong to their authors, published on [GameBanana](https://gamebanana.com/). Thank you to them.
 - [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) and [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans) fonts, SIL Open Font License.
+- Horse sprite based on "Pixel Character Horse Rider" by [Admurin](https://admurin.itch.io), recolored and modified.
 - Original pixel art scenery and characters.
 - Made by **ArthropodeLabs**.
 
@@ -109,7 +110,7 @@ Ocarina Mod Launcher installe, active et départage les mods d'*Ocarina of Time*
 
 > **Important.** Le launcher ne fournit **ni le jeu, ni ROM, ni clés, ni émulateur**. Vous devez posséder le jeu et l'émulateur vous-même. Il n'embarque aucun fichier du jeu et n'utilise aucun visuel de Nintendo : les images que vous voyez dans le catalogue sont celles publiées par les auteurs de mods sur GameBanana.
 
-![Catalogue](captures/fr-01-catalogue.png)
+![Catalogue](screenshots/fr-01-catalogue.png)
 
 ### Fonctions
 
@@ -127,11 +128,11 @@ Ocarina Mod Launcher installe, active et départage les mods d'*Ocarina of Time*
 - Interface en **français et en anglais**, thème rétro « Aventure 16 bits ».
 - Bouton **Lancer le jeu**.
 
-![Fiche d'un mod](captures/fr-02-fiche-mod.png)
+![Fiche d'un mod](screenshots/fr-02-fiche-mod.png)
 
 | Mes mods | Sauvegardes |
 |---|---|
-| ![Mes mods](captures/fr-03-mes-mods.png) | ![Sauvegardes](captures/fr-04-sauvegardes.png) |
+| ![Mes mods](screenshots/fr-03-mes-mods.png) | ![Sauvegardes](screenshots/fr-04-sauvegardes.png) |
 
 ### Installation
 
@@ -180,6 +181,7 @@ Projet de fan non officiel, sans lien avec Nintendo ni avec les auteurs des ému
 
 - Les mods appartiennent à leurs auteurs, publiés sur [GameBanana](https://gamebanana.com/). Merci à eux.
 - Polices [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) et [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans), licence SIL Open Font.
+- Sprite du cheval d'après « Pixel Character Horse Rider » d'[Admurin](https://admurin.itch.io), recoloré et modifié.
 - Décor et personnages en pixel art originaux.
 - Développé par **ArthropodeLabs**.
 
